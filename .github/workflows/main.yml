@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # Substitua pelo branch principal, se for diferente
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Limpar e configurar o diretório gh-pages
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          rm -rf public || exit 0
+          mkdir public
+          
+          # Copiar conteúdo da pasta de build para a pasta gh-pages
+          cp -r alissonzkv.github.io-gh-pages/* public
+          
+          # Iniciar commit no branch gh-pages
+          cd public
+          git init
+          git checkout -B gh-pages
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push --force --quiet "https://${{ secrets.GITHUB_TOKEN }}@github.com/alissonzkv/alissonzkv.github.io.git" gh-pages
