@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Executa quando há push na branch master
+      - master  # Executa o workflow quando há push na branch master
 
 jobs:
   build-and-deploy:
@@ -11,20 +11,22 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
+        with:
+          submodules: false  # Ignora submódulos, se existirem
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Use a versão do Node.js compatível com seu projeto
+          node-version: '14'  # Escolha a versão de Node.js compatível com seu projeto
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the project
-        run: npm run build  # Este comando cria o build, verifique se o comando é o correto para seu projeto
+        run: npm run build  # Certifique-se de que este é o comando correto para build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Certifique-se de que este seja o diretório onde o build é gerado
+          publish_dir: ./build  # Altere para o diretório correto, se não for 'build'
