@@ -1,0 +1,17 @@
+name: Clone Repository
+
+on:
+  workflow_dispatch:
+
+jobs:
+  clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout destino
+        uses: actions/checkout@v2
+
+      - name: Clone o repositório de origem
+        run: |
+          git clone --mirror https://https://github.com/tatihav/profalisson.git
+          cd profalisson.git
+          git push --mirror https://github.com/alissonzkv/alissonzkv.github.io.git
