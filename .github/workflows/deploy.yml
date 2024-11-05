@@ -14,6 +14,10 @@ jobs:
         with:
           submodules: false  # Ignora submódulos, se existirem
 
+      - name: Remove problematic directory
+        run: |
+          rm -rf profalisson || true
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
