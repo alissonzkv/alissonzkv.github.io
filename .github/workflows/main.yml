@@ -24,7 +24,7 @@ jobs:
           mkdir public
           
           # Copiar conteúdo da pasta de build para a pasta gh-pages
-          cp -r alissonzkv.github.io-gh-pages/* public
+          cp -r alissonzkv.github.io/* public
           
           # Iniciar commit no branch gh-pages
           cd public
