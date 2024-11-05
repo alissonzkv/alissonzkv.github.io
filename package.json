@@ -1,8 +1,8 @@
 {
-  "name": "profalisson",
+  "name": "alissonzkv.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tatihav.github.io/alissonzkv.github.io/",
+  "homepage": "https://alissonzkv.github.io/alissonzkv.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
