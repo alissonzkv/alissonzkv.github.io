@@ -18,8 +18,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Limpar e configurar o diretório gh-pages
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "alissonzkv"
+          git config --global user.email "alisson.uece@gmail.com"
           rm -rf public || exit 0
           mkdir public
           
