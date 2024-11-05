@@ -14,9 +14,11 @@ jobs:
         with:
           submodules: false  # Ignora submódulos, se existirem
 
-      - name: Remove problematic directory
+      - name: Force remove 'profalisson' directory
         run: |
-          rm -rf profalisson || true
+          if [ -d "profalisson" ]; then
+            rm -rf profalisson
+          fi
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
