@@ -7,20 +7,17 @@ jobs:
   clone:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout destino
-        uses: actions/checkout@v3
-
       - name: Configure Git para usar o GITHUB_TOKEN
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "alissonzkv"
-          git config --global user.email "alisson.uece@gmail.com"
-          git config --global credential.helper store
-          echo "https://$GITHUB_TOKEN@github.com" > ~/.git-credentials
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
       - name: Clone o repositório de origem
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git clone --mirror https://github.com/tatihav/profalisson.git profalisson.git
+          git clone --mirror https://${GITHUB_TOKEN}@github.com/tatihav/profalisson.git profalisson.git
           cd profalisson.git
-          git push --mirror https://github.com/alissonzkv/alissonzkv.github.io.git
+          git push --mirror https://${GITHUB_TOKEN}@github.com/alissonzkv/alissonzkv.github.io.git
