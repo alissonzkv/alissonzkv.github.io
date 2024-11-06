@@ -24,6 +24,7 @@ function Inicio() {
             { title: "Visão Computacional", content: "Estudo de técnicas para análise de imagens digitais. Livro recomendado: 'Computer Vision: Algorithms and Applications' de Richard Szeliski." },
             { title: "Aprendizado de Máquina", content: "Introdução ao aprendizado supervisionado e não supervisionado. Livro recomendado: 'Pattern Recognition and Machine Learning' de Christopher Bishop." },
             { title: "Redes Neurais", content: "Arquiteturas e treinamento de redes neurais profundas. Livro recomendado: 'Deep Learning' de Ian Goodfellow." },
+            { title: "Redes de Computadores", content: "Arquiteturas e treinamento de redes neurais profundas. Livro recomendado: 'Deep Learning' de Ian Goodfellow." },
             // Continue adicionando as disciplinas até chegar a 12
           ].map((disciplina, index) => (
             <div key={index} className={styles.card}>
