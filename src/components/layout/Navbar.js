@@ -32,6 +32,7 @@ function Navbar() {
                     <a href="https://lattes.cnpq.br" target="_blank" rel="noopener noreferrer">Lattes</a> <br />
                     <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a> <br />
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> <br />
+                    <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a> <br />
                 </div>
 
         
