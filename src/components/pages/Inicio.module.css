@@ -1,0 +1,31 @@
+.inicioContainer {
+    margin-left: 300px; /* Alinha o conteúdo principal */
+}
+
+h1 {
+    color: #4a7292;
+    margin-bottom: 1em; /* Espaçamento entre o título e os links */
+}
+
+.linkList {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding-left: 0; /* Remove o recuo padrão da lista */
+    margin: 0; /* Remove margens extras */
+}
+
+.linkList li {
+    margin-bottom: 0.5em; /* Espaçamento entre os links */
+}
+
+.lattesLink {
+    font-size: 0.9em;
+    color: #6399c6;
+    text-decoration: none;
+}
+
+.lattesLink:hover {
+    color: #41207d;
+}
+.texto{
+    color:  #2a174e;
+}

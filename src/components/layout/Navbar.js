@@ -10,26 +10,24 @@ function Navbar() {
             <Container>
                 <div className={styles.profile}>
                     <Link to="/">
-                        <img src={fotoAlisson} alt="Prof. Dr. Alisson Barbosa de Sousa" className={styles.foto} />
+                        <img src={fotoAlisson} alt="Prof. Dr. Alisson Barbosa de Souza" className={styles.foto} />
                     </Link>
                     <div className={styles.info}>
-                        <h1 className={styles.title}>Prof. Dr. Alisson Barbosa de Sousa</h1>
-                        <h2 className={styles.subtitle}>Universidade Federal do Ceará (UFC)</h2>
-                        <a 
-                            href="http://lattes.cnpq.br/6255476538629622" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className={styles.lattesLink}
-                        >
-                            Currículo Lattes
-                        </a>
+                        <p>Prof. Dr. Alisson Barbosa de Souza</p>
+                        
+                        <p> Universidade Federal do Ceará (UFC) Campus Quixadá - 
+Av. José de Freitas Queiroz, 5003
+Cedro - Quixadá - Ceará
+63902-580</p>
+                        
                         <p className={styles.emailLink}>E-mail: <a href="mailto:alisson@ufc.br">alisson@ufc.br</a></p>
                     </div>
                 </div>
-                <ul className={styles.list}>
-                    <li className={styles.item}><Link to="/">Início</Link></li>
-                    <li className={styles.item}><Link to="/disciplina1">Disciplina1</Link></li>
+                <ul className={styles.lista}>
+                    <li className={styles.item}><Link to="/"></Link></li>
+                    
                 </ul>
+               
             </Container>
         </nav>
     );
