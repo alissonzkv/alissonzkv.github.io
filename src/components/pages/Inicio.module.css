@@ -46,13 +46,13 @@
 .teachingCards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Define o espaçamento entre os cards */
-  justify-content: space-between;
+  row-gap: 20px; /* Espaçamento vertical entre linhas */
+  column-gap: 20px; /* Espaçamento horizontal entre os cards */
 }
 
 .teachingCards .card {
-  flex: 1 1 calc(50% - 10px); /* Dois cards por linha */
-  min-height: 180px; /* Altura mínima para garantir espaço para o texto */
+  flex: 1 1 48%; /* Ocupa aproximadamente 50% da largura, considerando o gap */
+  min-height: 200px; /* Altura mínima para dar espaço ao conteúdo */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
