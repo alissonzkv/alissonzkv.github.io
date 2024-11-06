@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Container from "./Container";
 import styles from './Navbar.module.css';
 import fotoAlisson from './../../img/fotoalisson.jpg'; // ajuste a extensão conforme necessário
+import { FaLinkedin, FaUserGraduate } from 'react-icons/fa';
+import { SiResearchgate, SiOrcid, SiGooglescholar } from 'react-icons/si';
 
 function Navbar() {
     return (
@@ -12,10 +14,10 @@ function Navbar() {
                     <Link to="/">
                         <img src={fotoAlisson} alt="Prof. Dr. Alisson Barbosa de Souza" className={styles.foto} />
                     </Link>
-                    <div className={styles.info}>
-                        <p>Prof. Dr. Alisson Barbosa de Souza</p>
+                    <div className={styles.nome}>
+                        <h3>Prof. Dr. Alisson Barbosa de Souza</h3>
                         
-                        <p> Federal University of Ceará <br />
+                        <p className={styles.info}> Federal University of Ceará <br />
                             Quixadá Campus <br />
                             José de Freitas Queiroz Avenue, 5003 <br />
                             Quixadá, Ceará, Brazil <br />
@@ -28,11 +30,15 @@ function Navbar() {
 
                 {/* Nova coluna de links à direita */}
                 <div className={styles.socialLinks}>
-                    <a href="https://www.researchgate.net" target="_blank" rel="noopener noreferrer">ResearchGate</a> <br />
-                    <a href="https://lattes.cnpq.br" target="_blank" rel="noopener noreferrer">Lattes</a> <br />
-                    <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a> <br />
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> <br />
-                    <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a> <br />
+                    <ul>
+                    <li>  <FaLinkedin /> <a  href="https://www.linkedin.com/in/alissonbs/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
+                    <li> <FaUserGraduate /> <a href="http://lattes.cnpq.br/6255476538629622" target="_blank" rel="noopener noreferrer">Lattes </a> </li>
+                    <li> <SiGooglescholar /> <a href="https://scholar.google.com/citations?user=FmrLLGgAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> </li>
+                    <li>  <SiOrcid /> <a href="https://orcid.org/0000-0002-6099-011X" target="_blank" rel="noopener noreferrer">ORCID</a> </li>
+                   <li> <SiResearchgate /> <a href="https://www.researchgate.net/profile/Alisson-Souza-3" target="_blank" rel="noopener noreferrer">ResearchGate</a> </li>
+                                 
+                  
+                   </ul>
                 </div>
 
         
