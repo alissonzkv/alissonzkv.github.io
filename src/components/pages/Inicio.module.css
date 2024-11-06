@@ -4,7 +4,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center; /* Centraliza o conteúdo */
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Limita a largura total do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner em relação à página */
 }
 
 /* Card padrão */
@@ -14,8 +17,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 600px; /* Limita o tamanho dos cards */
+  max-width: 600px; /* Limita o tamanho dos cards para centralização */
   text-align: center;
+  margin: 0 auto; /* Centraliza o card dentro do contêiner */
 }
 
 /* Centralização de títulos */
@@ -35,6 +39,7 @@
 .teachingSection {
   width: 100%;
   max-width: 800px; /* Limita a largura da seção de ensino */
+  margin: 0 auto; /* Centraliza a seção em relação à página */
 }
 
 /* Estilo para os cards de disciplinas na seção Teaching */
