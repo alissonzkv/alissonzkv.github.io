@@ -6,20 +6,24 @@ function Inicio() {
     <div className={styles.inicioContainer}>
       {/* Card para "Research Interests" */}
       <div className={styles.card}>
-        <h1>Research Interests</h1>
+        <h1 className={styles.titleCentered}>Research Interests</h1>
         <p className={styles.texto}>
-          Lista dos interesses de pesquisa aqui. Exemplo: Visão Computacional, Processamento de Imagens, Redes Neurais, Aprendizado de Máquina, Inteligência Artificial, etc.
+          Visão Computacional, Processamento de Imagens, Redes Neurais, Aprendizado de Máquina, Inteligência Artificial, Processamento de Sinais, Modelagem Estatística, entre outros.
         </p>
       </div>
 
-      {/* Seção "Teaching" com múltiplos cards */}
+      {/* Card para o título "Teaching" */}
+      <div className={styles.card}>
+        <h1 className={styles.titleCentered}>Teaching</h1>
+      </div>
+
+      {/* Seção "Teaching" com múltiplos cards de disciplinas */}
       <div className={styles.teachingSection}>
-        <h1>Teaching</h1>
         <div className={styles.teachingCards}>
           {[
-            { title: "Disciplina 1", content: "Descrição da disciplina 1. Livro recomendado: Livro 1." },
-            { title: "Disciplina 2", content: "Descrição da disciplina 2. Livro recomendado: Livro 2." },
-            { title: "Disciplina 3", content: "Descrição da disciplina 3. Livro recomendado: Livro 3." },
+            { title: "Visão Computacional", content: "Estudo de técnicas para análise de imagens digitais. Livro recomendado: 'Computer Vision: Algorithms and Applications' de Richard Szeliski." },
+            { title: "Aprendizado de Máquina", content: "Introdução ao aprendizado supervisionado e não supervisionado. Livro recomendado: 'Pattern Recognition and Machine Learning' de Christopher Bishop." },
+            { title: "Redes Neurais", content: "Arquiteturas e treinamento de redes neurais profundas. Livro recomendado: 'Deep Learning' de Ian Goodfellow." },
             // Continue adicionando as disciplinas até chegar a 12
           ].map((disciplina, index) => (
             <div key={index} className={styles.card}>
