@@ -15,10 +15,12 @@ function Navbar() {
                     <div className={styles.info}>
                         <p>Prof. Dr. Alisson Barbosa de Souza</p>
                         
-                        <p> Universidade Federal do Ceará (UFC) Campus Quixadá - <br />
-Av. José de Freitas Queiroz, 5003 \\
-Cedro - Quixadá - Ceará
-63902-580</p>
+                        <p> Universidade Federal do Ceará (UFC) <br />
+                            Campus Quixadá <br />
+                            José de Freitas Queiroz Avenue, 5003 <br />
+                            Quixadá, Ceará, Brazil <br />
+                            Zip Code: 63902-580
+                        </p>
                         
                         <p className={styles.emailLink}>E-mail: <a href="mailto:alisson@ufc.br">alisson@ufc.br</a></p>
                     </div>
