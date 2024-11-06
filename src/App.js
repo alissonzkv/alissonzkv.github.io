@@ -4,23 +4,21 @@ import Inicio from './components/pages/Inicio';
 
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
+//import Footer from './components/layout/Footer';
 
 function App() {
   return (
     <Router>
     <Container customClass="min-height">
-      <Navbar />
-  <Routes>
+    <Navbar />
+    <Routes>
     <Route path="/" element={<Inicio />} />
-  
    
-  </Routes>
-  </Container>
-<Footer />
+    </Routes>
+    </Container>
+    //<Footer />
  
-
-</Router>
+    </Router>
   );
 }
 
