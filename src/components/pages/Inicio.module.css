@@ -6,7 +6,7 @@
   gap: 20px;
   align-items: center;
   width: 100%;
-  max-width: 800px; /* Limita a largura total do contêiner */
+  max-width: 800px;
   margin: 0 auto; /* Centraliza o contêiner em relação à página */
 }
 
@@ -29,10 +29,10 @@
   margin-top: 0;
 }
 
-/* Estilo para o parágrafo de Research Interests */
-.texto {
+/* Cor do texto dos parágrafos */
+.texto, .card p {
   margin: 0;
-  color: #555;
+  color: #555; /* Cor dos parágrafos, mesma usada em Research Interests */
 }
 
 /* Seção Teaching */
@@ -48,11 +48,17 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  align-items: stretch; /* Faz todos os cards terem a mesma altura */
 }
 
 .teachingCards .card {
   flex: 1 1 calc(33.33% - 20px); /* 3 cards por linha em telas grandes */
   min-width: 250px;
+  max-width: 250px; /* Garante que todos os cards tenham a mesma largura */
+  min-height: 200px; /* Define uma altura mínima para manter o tamanho consistente */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o conteúdo dentro do card */
 }
 
 /* Responsividade */
