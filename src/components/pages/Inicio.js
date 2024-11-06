@@ -8,7 +8,7 @@ function Inicio() {
       <div className={styles.card}>
         <h1 className={styles.titleCentered}>Research Interests</h1>
         <p className={styles.texto}>
-          Visão Computacional, Processamento de Imagens, Redes Neurais, Aprendizado de Máquina, Inteligência Artificial, Processamento de Sinais, Modelagem Estatística, entre outros.
+            Wireless Networks, VANETs, Distributed Systems, Data Science, Algorithms, Machine Learning, Optimization.
         </p>
       </div>
 
