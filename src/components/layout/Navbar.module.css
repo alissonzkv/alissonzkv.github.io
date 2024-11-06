@@ -1,13 +1,15 @@
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    width: 100%; /* Faz com que o navbar ocupe toda a largura do container */
     background-color: #222;
     padding: 0;
     align-items: center;
     height: 200px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+   
 }
-
 .profile {
     display: flex;
     align-items: center;
@@ -21,29 +23,54 @@
     margin-left: 1em;
     border-radius: 10px;
 }
+.nome {
+    color: #FFF;
+ font: 1.5em;
+}
 
 .info {
     color: #FFF;
+ font: 1em;
 }
 
 /* Links sociais alinhados à direita */
 .socialLinks {
     display: flex;
-    gap: 15px; /* Espaçamento entre links */
+    flex-direction: column; /* Organiza os links verticalmente */
+    align-items: flex-start; /* Alinha os links à esquerda */
+    gap: 10px; /* Espaçamento entre links */
     margin-left: auto;
+    color: #ffffff;
+}
+
+.socialLinks ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding:0;
+    margin: 5px;
+}
+
+.socialLinks li {
+    display: flex;
+    align-items: center; /* Centraliza o ícone e o texto verticalmente */
+    gap: 0.5em; /* Espaço entre ícone e texto */
+    margin-bottom: 7px;
 }
 
 .socialLinks a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
 }
 
 .socialLinks a:hover {
     text-decoration: underline;
+    color: rgb(181, 195, 199);
 }
 
+
+
 p {
-    font-size: 1em;
+    font-size: 0.8em;
     margin: 0;
     color: #ece9e9;
     font-weight: bold;
@@ -86,44 +113,94 @@ p {
     color: #FFF;
 }
 
-/* Media Query para telas menores */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column; 
-        height: auto; 
+        height: auto;
         padding: 1em;
+    }
+
+    .container {
+        max-width: 100%; /* Ocupa toda a largura da tela */
+        padding: 0 1em;
     }
 
     .socialLinks {
         margin-top: 10px;
         gap: 10px;
     }
-    
+
     .profile {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .foto {
-        width: 100px; 
-        height: auto; 
-        margin-bottom: 0.5em; 
+        width: 100px;
+        height: auto;
+        margin-bottom: 0.5em;
     }
 
     .info {
-        text-align: center; 
+        text-align: center;
+    }
+}
+@media (max-width: 624px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
     }
 
-    .lista {
-        flex-direction: column; 
-        padding: 0; 
+    .profile {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .item {
-        margin: 0.5em 0; 
+    .foto {
+        width: 100px;
+        height: auto;
+        margin-bottom: 0.5em;
     }
 
-    .title, .subtitle, .lattesLink, .emailLink {
-        font-size: 1em;
+    .info {
+        text-align: center;
+    }
+
+    .socialLinks {
+        margin-top: 10px;
+        align-items: center; /* Centraliza os links sociais */
+        gap: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Ajustes para outros tamanhos de tela */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 1em;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialLinks {
+        margin-top: 10px;
+        gap: 10px;
     }
 }
