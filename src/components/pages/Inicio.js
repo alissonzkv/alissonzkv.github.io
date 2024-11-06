@@ -8,7 +8,7 @@ function Inicio() {
       <div className={styles.card}>
         <h1 className={styles.titleCentered}>Research Interests</h1>
         <p className={styles.texto}>
-            Wireless Networks, VANETs, Distributed Systems, Data Science, Algorithms, Machine Learning, Optimization.
+            Wireless Networks, VANETs, Distributed Systems, Data Science, Algorithms, Machine Learning.
         </p>
       </div>
 
