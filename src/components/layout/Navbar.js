@@ -16,7 +16,7 @@ function Navbar() {
                         <p>Prof. Dr. Alisson Barbosa de Souza</p>
                         
                         <p> Universidade Federal do Ceará (UFC) Campus Quixadá - <br>
-Av. José de Freitas Queiroz, 5003
+Av. José de Freitas Queiroz, 5003 \\
 Cedro - Quixadá - Ceará
 63902-580</p>
                         
