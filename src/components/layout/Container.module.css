@@ -1,19 +1,25 @@
 .container {
-    width: 1200px;
+    max-width: 1000px; /* Define uma largura máxima para o conteúdo */
+    width: 100%; /* Ocupa 100% da largura em telas menores */
     display: flex;
-   justify-content: space-between;
-   margin: 0 auto;
-   flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 1em; /* Adiciona um pequeno espaço nas laterais */
+    flex-wrap: wrap;
 }
 
-.min-height{
-    min-height: 75%;
-   
+/* Ajustes para o layout responsivo em diferentes tamanhos de tela */
+@media (max-width: 704px) {
+    .container {
+        max-width: 90%; /* Reduz um pouco a largura em telas médias */
+        padding: 0 1em;
+    }
 }
-.start {
-    justify-content: flex-start;
-}
-.column {
-    flex-direction: column;
-    justify-content: flex-start;
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 100%; /* Ocupa toda a largura em telas pequenas */
+        padding: 0 1em;
+        flex-direction: column; /* Muda o layout para uma coluna em telas menores */
+    }
 }
