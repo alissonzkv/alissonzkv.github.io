@@ -15,7 +15,7 @@ function Navbar() {
                     <div className={styles.info}>
                         <p>Prof. Dr. Alisson Barbosa de Souza</p>
                         
-                        <p> Universidade Federal do Ceará (UFC) <br />
+                        <p> Federal University of Ceará <br />
                             Campus Quixadá <br />
                             José de Freitas Queiroz Avenue, 5003 <br />
                             Quixadá, Ceará, Brazil <br />
