@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.efb06aca.css",
-    "main.js": "/static/js/main.b773b83e.js",
+    "main.js": "/static/js/main.93e3938c.js",
     "static/media/fotoalisson.jpg": "/static/media/fotoalisson.3baf3a883de99024dcab.jpg",
     "index.html": "/index.html",
     "main.efb06aca.css.map": "/static/css/main.efb06aca.css.map",
-    "main.b773b83e.js.map": "/static/js/main.b773b83e.js.map"
+    "main.93e3938c.js.map": "/static/js/main.93e3938c.js.map"
   },
   "entrypoints": [
     "static/css/main.efb06aca.css",
-    "static/js/main.b773b83e.js"
+    "static/js/main.93e3938c.js"
   ]
 }
