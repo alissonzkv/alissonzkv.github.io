@@ -17,7 +17,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 600px;
+  max-width: 600px; /* Limita o tamanho dos cards principais */
   text-align: center;
   margin: 0 auto;
 }
@@ -32,25 +32,27 @@
 /* Cor do texto dos parágrafos */
 .texto, .card p {
   margin: 0;
-  color: #555;
+  color: #555; /* Cor dos parágrafos, mesma usada em Research Interests */
 }
 
 /* Seção Teaching */
 .teachingSection {
   width: 100%;
-  max-width: 800px;
+  max-width: 800px; /* Limita a largura da seção de ensino */
   margin: 0 auto;
 }
 
 /* Estilo para os cards de disciplinas na seção Teaching */
 .teachingCards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Garante dois cards por linha */
-  gap: 20px; /* Define o espaçamento entre os cards */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Reduz o espaçamento entre os cards */
+  justify-content: center;
+  align-items: stretch;
 }
 
 .teachingCards .card {
-  min-height: 200px; /* Altura mínima para garantir espaço para o texto */
+  flex: 1 1 calc(33.33% - 10px); /* 3 cards por linha em telas grandes */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,13 +60,13 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .teachingCards {
-    grid-template-columns: 1fr; /* Um card por linha em telas médias */
+  .teachingCards .card {
+    flex: 1 1 calc(50% - 10px); /* 2 cards por linha em telas médias */
   }
 }
 
 @media (max-width: 500px) {
-  .teachingCards {
-    grid-template-columns: 1fr; /* Um card por linha em telas pequenas */
+  .teachingCards .card {
+    flex: 1 1 100%; /* 1 card por linha em telas pequenas */
   }
 }
