@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column; /* Organiza os links verticalmente */
     align-items: flex-start; /* Alinha os links à esquerda */
-    gap: 10px; /* Espaçamento entre links */
+    gap: 5px; /* Espaçamento entre links */
     margin-left: auto;
     color: #ffffff;
 }
@@ -46,7 +46,7 @@
 .socialLinks ul {
     list-style: none; /* Remove os marcadores da lista */
     padding:0;
-    margin: 5px;
+    margin-top: 20px;
 }
 
 .socialLinks li {
@@ -59,7 +59,7 @@
 .socialLinks a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    font-size: 0.85em; /* Aumenta o tamanho da fonte */
 }
 
 .socialLinks a:hover {
