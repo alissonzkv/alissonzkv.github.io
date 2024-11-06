@@ -25,6 +25,16 @@ function Navbar() {
                         <p className={styles.emailLink}>E-mail: <a href="mailto:alisson@ufc.br">alisson@ufc.br</a></p>
                     </div>
                 </div>
+
+                {/* Nova coluna de links à direita */}
+                <div className={styles.socialLinks}>
+                    <a href="https://www.researchgate.net" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+                    <a href="https://lattes.cnpq.br" target="_blank" rel="noopener noreferrer">Lattes</a>
+                    <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+
+        
                 <ul className={styles.lista}>
                     <li className={styles.item}><Link to="/"></Link></li>
                     
