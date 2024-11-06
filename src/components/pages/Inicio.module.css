@@ -1,31 +1,53 @@
 .inicioContainer {
-    margin-left: 300px; /* Alinha o conteúdo principal */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-h1 {
-    color: #4a7292;
-    margin-bottom: 1em; /* Espaçamento entre o título e os links */
+.card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.linkList {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding-left: 0; /* Remove o recuo padrão da lista */
-    margin: 0; /* Remove margens extras */
+.card h1, .card h2 {
+  margin-top: 0;
+  color: #333;
 }
 
-.linkList li {
-    margin-bottom: 0.5em; /* Espaçamento entre os links */
+.card p {
+  margin: 0;
+  color: #555;
 }
 
-.lattesLink {
-    font-size: 0.9em;
-    color: #6399c6;
-    text-decoration: none;
+.teachingSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.lattesLink:hover {
-    color: #41207d;
+.teachingCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.texto{
-    color:  #2a174e;
+
+.teachingCards .card {
+  flex: 1 1 calc(33.33% - 20px); /* 3 cards por linha, ajuste conforme necessário */
+  min-width: 250px; /* Para garantir que os cards não fiquem muito pequenos */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .teachingCards .card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards por linha em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .teachingCards .card {
+    flex: 1 1 100%; /* 1 card por linha em telas muito pequenas */
+  }
 }
