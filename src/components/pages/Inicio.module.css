@@ -44,15 +44,13 @@
 
 /* Estilo para os cards de disciplinas na seção Teaching */
 .teachingCards {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 20px; /* Espaçamento vertical entre linhas */
-  column-gap: 20px; /* Espaçamento horizontal entre os cards */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Garante dois cards por linha */
+  gap: 20px; /* Define o espaçamento entre os cards */
 }
 
 .teachingCards .card {
-  flex: 1 1 48%; /* Ocupa aproximadamente 50% da largura, considerando o gap */
-  min-height: 200px; /* Altura mínima para dar espaço ao conteúdo */
+  min-height: 200px; /* Altura mínima para garantir espaço para o texto */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,13 +58,13 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .teachingCards .card {
-    flex: 1 1 100%; /* Um card por linha em telas médias */
+  .teachingCards {
+    grid-template-columns: 1fr; /* Um card por linha em telas médias */
   }
 }
 
 @media (max-width: 500px) {
-  .teachingCards .card {
-    flex: 1 1 100%; /* Um card por linha em telas pequenas */
+  .teachingCards {
+    grid-template-columns: 1fr; /* Um card por linha em telas pequenas */
   }
 }
