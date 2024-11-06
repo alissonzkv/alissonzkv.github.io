@@ -46,13 +46,12 @@
 .teachingCards {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Reduz o espaçamento entre os cards */
-  justify-content: center;
-  align-items: stretch;
+  gap: 10px; /* Define o espaçamento entre os cards */
+  justify-content: space-between; /* Distribui os cards para ocupar a largura total */
 }
 
 .teachingCards .card {
-  flex: 1 1 calc(33.33% - 10px); /* 3 cards por linha em telas grandes */
+  flex: 1 1 calc(50% - 5px); /* Dois cards por linha, ocupando a largura total */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,12 +60,12 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .teachingCards .card {
-    flex: 1 1 calc(50% - 10px); /* 2 cards por linha em telas médias */
+    flex: 1 1 calc(100% - 10px); /* Um card por linha em telas médias */
   }
 }
 
 @media (max-width: 500px) {
   .teachingCards .card {
-    flex: 1 1 100%; /* 1 card por linha em telas pequenas */
+    flex: 1 1 100%; /* Um card por linha em telas pequenas */
   }
 }
