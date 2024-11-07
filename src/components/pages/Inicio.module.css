@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto; /* Centraliza o contêiner em relação à página */
+  margin: 0 auto;
 }
 
 /* Card padrão */
@@ -25,7 +25,7 @@
 /* Centralização de títulos */
 .titleCentered {
   color: #333;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-top: 0;
 }
 
@@ -33,6 +33,18 @@
 .texto, .card p {
   margin: 0;
   color: #555;
+}
+
+/* Estilos específicos para as seções de conteúdo e bibliografia dentro dos cards de disciplinas */
+.contentSection {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.bibliographySection {
+  margin-top: 10px;
+  font-style: italic;
+  text-align: left;
 }
 
 /* Seção Teaching */
@@ -46,14 +58,14 @@
 .teachingCards {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px; /* Espaçamento vertical entre linhas */
-  column-gap: 0px; /* Reduz o espaçamento horizontal entre os cards */
+  row-gap: 20px;
+  column-gap: 10px;
   justify-content: center;
   align-items: stretch;
 }
 
 .teachingCards .card {
-  flex: 1 1 calc(33.33% - 5px); /* 3 cards por linha em telas grandes */
+  flex: 1 1 calc(33.33% - 10px);
   min-width: 250px;
   max-width: 250px;
   min-height: 200px;
@@ -65,12 +77,12 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .teachingCards .card {
-    flex: 1 1 calc(50% - 5px); /* 2 cards por linha em telas médias */
+    flex: 1 1 calc(50% - 10px);
   }
 }
 
 @media (max-width: 500px) {
   .teachingCards .card {
-    flex: 1 1 100%; /* 1 card por linha em telas pequenas */
+    flex: 1 1 100%;
   }
 }
