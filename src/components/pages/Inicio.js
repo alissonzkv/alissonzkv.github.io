@@ -24,32 +24,33 @@ function Inicio() {
             { 
               title: "Concurrent Software Development", 
               content: "Introduction, Primitives, Critical Section Problem, Liveness and Safety, Classical Problems, Threaded Programming, Object Sharing and Composition, Concurrent Programming in Java, High-Level Concurrent Objects, Concurrent Software Lifecycle Management, Advanced Topics in Concurrent Programming in Java.",
-              bibliography: "Recommended Book: 'Concurrent Programming in Java' by Doug Lea." 
+              mainTextbook: "Recommended Book: 'Concurrent Programming in Java' by Doug Lea." 
             },
             { 
               title: "Aprendizado de Máquina", 
               content: "Introdução ao aprendizado supervisionado e não supervisionado.",
-              bibliography: "Livro recomendado: 'Pattern Recognition and Machine Learning' de Christopher Bishop." 
+              mainTextbook: "Livro recomendado: 'Pattern Recognition and Machine Learning' de Christopher Bishop." 
             },
             { 
               title: "Redes Neurais", 
               content: "Arquiteturas e treinamento de redes neurais profundas.",
-              bibliography: "Livro recomendado: 'Deep Learning' de Ian Goodfellow." 
+              mainTextbook: "Livro recomendado: 'Deep Learning' de Ian Goodfellow." 
             },
             { 
               title: "Redes de Computadores", 
               content: "Fundamentos de redes de computadores e protocolos.",
-              bibliography: "Livro recomendado: 'Computer Networking: A Top-Down Approach' de James Kurose e Keith Ross." 
+              mainTextbook: "Livro recomendado: 'Computer Networking: A Top-Down Approach' de James Kurose e Keith Ross." 
             },
             // Adicione mais disciplinas conforme necessário
           ].map((disciplina, index) => (
             <div key={index} className={styles.card}>
-              <h2>{disciplina.title}</h2>
+              <h2 className={styles.cardTitle}>{disciplina.title}</h2>
               <div className={styles.contentSection}>
-                <p><strong>Content:</strong> {disciplina.content}</p>
+                <p><strong>Content:</strong></p>
+                <p>{disciplina.content}</p>
               </div>
-              <div className={styles.bibliographySection}>
-                <p><strong>Bibliography:</strong> {disciplina.bibliography}</p>
+              <div className={styles.mainTextbookSection}>
+                <p><strong>Main Textbook:</strong> {disciplina.mainTextbook}</p>
               </div>
             </div>
           ))}
