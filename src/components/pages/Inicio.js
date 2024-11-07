@@ -49,7 +49,7 @@ function Inicio() {
             { 
               title: "Internet and TCP/IP Architecture", 
               content: "WANs and devices. TCP/IP architecture. Application, transport and network layer protocols. Network interconnection and segmentation, addressing, subnet masks. Routing algorithms. Protocols and programs for troubleshooting: telnet, ping, traceroute, ipconfig, arp, netstat, among others. Quality of service in TCP/IP networks. IP version 6 (IPV6). Packet analysis with sniffers: WireShark. Router simulator.",
-              mainTextbook: "Filippetti, M. "CCNA 6.0: guia completo de estudo." (2019)." 
+              mainTextbook: "Filippetti, M. CCNA 6.0: guia completo de estudo. (2019)." 
             },
             { 
               title: "Mobile and Wireless Networks", 
