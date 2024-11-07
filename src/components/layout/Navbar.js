@@ -42,11 +42,7 @@ function Navbar() {
                 </div>
 
         
-                <ul className={styles.lista}>
-                    <li className={styles.item}><Link to="/"></Link></li>
-                    
-                </ul>
-               
+              
             </Container>
         </nav>
     );
