@@ -22,7 +22,14 @@
   margin: 0 auto;
 }
 
-/* Centralização de títulos */
+/* Título dos cards de disciplinas */
+.cardTitle {
+  font-size: 1.3em;
+  color: #333;
+  margin-top: 0;
+}
+
+/* Centralização de títulos principais */
 .titleCentered {
   color: #333;
   font-size: 1.5em;
@@ -35,14 +42,19 @@
   color: #555;
 }
 
-/* Estilos específicos para as seções de conteúdo e bibliografia dentro dos cards de disciplinas */
+/* Estilos específicos para as seções de conteúdo e main textbook dentro dos cards de disciplinas */
 .contentSection {
   margin-top: 10px;
   text-align: left;
 }
 
-.bibliographySection {
-  margin-top: 10px;
+.contentSection p:first-child {
+  font-weight: bold; /* Negrito para "Content:" */
+  margin-bottom: 5px;
+}
+
+.mainTextbookSection {
+  margin-top: 15px; /* Espaçamento entre o conteúdo e o main textbook */
   font-style: italic;
   text-align: left;
 }
