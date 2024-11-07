@@ -17,9 +17,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 600px; /* Limita o tamanho dos cards para centralização */
+  max-width: 600px;
   text-align: center;
-  margin: 0 auto; /* Centraliza o card dentro do contêiner */
+  margin: 0 auto;
 }
 
 /* Centralização de títulos */
@@ -32,39 +32,40 @@
 /* Cor do texto dos parágrafos */
 .texto, .card p {
   margin: 0;
-  color: #555; /* Cor dos parágrafos, mesma usada em Research Interests */
+  color: #555;
 }
 
 /* Seção Teaching */
 .teachingSection {
   width: 100%;
-  max-width: 800px; /* Limita a largura da seção de ensino */
-  margin: 0 auto; /* Centraliza a seção em relação à página */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Estilo para os cards de disciplinas na seção Teaching */
 .teachingCards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 20px; /* Espaçamento vertical entre linhas */
+  column-gap: 10px; /* Reduz o espaçamento horizontal entre os cards */
   justify-content: center;
-  align-items: stretch; /* Faz todos os cards terem a mesma altura */
+  align-items: stretch;
 }
 
 .teachingCards .card {
-  flex: 1 1 calc(33.33% - 20px); /* 3 cards por linha em telas grandes */
+  flex: 1 1 calc(33.33% - 10px); /* 3 cards por linha em telas grandes */
   min-width: 250px;
-  max-width: 250px; /* Garante que todos os cards tenham a mesma largura */
-  min-height: 200px; /* Define uma altura mínima para manter o tamanho consistente */
+  max-width: 250px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribui o conteúdo dentro do card */
+  justify-content: space-between;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .teachingCards .card {
-    flex: 1 1 calc(50% - 20px); /* 2 cards por linha em telas médias */
+    flex: 1 1 calc(50% - 10px); /* 2 cards por linha em telas médias */
   }
 }
 
