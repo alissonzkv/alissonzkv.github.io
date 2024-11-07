@@ -12,15 +12,22 @@
 
 /* Card padrão */
 .card {
-  background-color: #f5f5f5;
+  background-color: #dcd9d9;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 600px;
   text-align: center;
   margin: 0 auto;
+  transition: all 0.3s ease; 
 }
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+  transform: scale(1.05); /* Aumenta o tamanho em 5% */
+  transition: all 0.3s ease; /* Suaviza a transição */
+}
+
 
 /* Título dos cards de disciplinas */
 .cardTitle {
@@ -70,13 +77,14 @@
 .teachingCards {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
-  column-gap: 10px;
+  row-gap: 10px;
+  column-gap: 5px;
   justify-content: center;
   align-items: stretch;
 }
 
 .teachingCards .card {
+  margin: 25px;
   flex: 1 1 calc(33.33% - 10px);
   min-width: 250px;
   max-width: 250px;
@@ -94,7 +102,26 @@
 }
 
 @media (max-width: 500px) {
-  .teachingCards .card {
-    flex: 1 1 100%;
+  .teachingCards {
+    row-gap: 15px; /* Aumenta o espaçamento vertical entre os cards */
+    column-gap: 0px; /* Remove o espaçamento horizontal para economizar espaço */
+   
   }
+
+  .teachingCards .card {
+    flex: 1 1 100%; /* Ocupa 100% da largura do container */
+    margin: 10px 0; /* Margem apenas vertical para centralizar */
+  }
+}
+
+/* Ajuste para o contêiner principal */
+.inicioContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
