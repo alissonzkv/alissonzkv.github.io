@@ -166,11 +166,15 @@ p {
     .info {
         text-align: center;
     }
+    .emailLink{
+        margin-left: 70px;
+    }
 
     .socialLinks {
         margin-top: 10px;
         align-items: center; /* Centraliza os links sociais */
         gap: 10px;
+        margin-left: 80px;
     }
 
     .container {
@@ -181,26 +185,33 @@ p {
     }
 }
 
-/* Ajustes para outros tamanhos de tela */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 1em;
+@media (max-width: 500px) {
+    .socialLinks {
+        flex-direction: column; /* Coloca os links em uma coluna */
+        align-items: center; /* Centraliza os links */
+        gap: 10px; /* Aumenta o espaçamento entre os links */
+        margin-top: 15px; /* Adiciona margem superior para dar espaço */
     }
-
-    .container {
-        max-width: 100%;
-        padding: 0 1em;
-    }
-
-    .profile {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .socialLinks {
         margin-top: 10px;
+        align-items: center; /* Centraliza os links sociais */
         gap: 10px;
+        margin-left:20px;
+    }
+
+
+    .socialLinks ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .socialLinks li {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centraliza o texto ao lado dos ícones */
+    }
+
+    .socialLinks a {
+        font-size: 0.9em; /* Ajusta o tamanho da fonte para caber melhor */
     }
 }
