@@ -39,7 +39,7 @@
 /* Centralização de títulos principais */
 .titleCentered {
   color: #333;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-top: 0;
 }
 
@@ -66,11 +66,17 @@
   text-align: left;
 }
 
+.subtitlecourses{
+  font-size: 1.1em;
+  margin-top: -10px;
+  color:#333
+}
 /* Seção Teaching */
 .teachingSection {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 0;
 }
 
 /* Estilo para os cards de disciplinas na seção Teaching */
@@ -81,6 +87,7 @@
   column-gap: 5px;
   justify-content: center;
   align-items: stretch;
+  font-size: 0.9em;
 }
 
 .teachingCards .card {
