@@ -47,7 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px; /* Espaçamento vertical entre linhas */
-  column-gap: 10px; /* Reduz o espaçamento horizontal entre os cards */
+  column-gap: 5px; /* Reduz o espaçamento horizontal entre os cards */
   justify-content: center;
   align-items: stretch;
 }
